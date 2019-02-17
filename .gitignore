@@ -7,6 +7,9 @@
 /var/
 /vendor/
 /.idea/
+/node_modules/
+/public/build/
+/star-admin/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###

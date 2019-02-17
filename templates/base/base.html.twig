@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Star Admin</title>
+        {% block stylesheet %}
+            <link rel="stylesheet" href="/build/app.css">
+        {% endblock %}
+    </head>
+    <body>
+    {% block body %}
+        <div class="container-scroller">
+            {{ include('base/header.html.twig') }}
+            <div class="container-fluid page-body-wrapper">
+                {{ include('base/sidebar.html.twig') }}
+                <div class="main-panel">
+                    {{ include('base/main.html.twig') }}
+                    {{ include('base/footer.html.twig') }}
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+    {% block javascripts %}
+        <script src="/build/runtime.js"></script>
+        <script src="/build/app.js"></script>
+    {% endblock %}
+    </body>
+</html>
